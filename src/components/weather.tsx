@@ -59,7 +59,8 @@ const Weather: React.FC = () => {
   };
 
   // Handle selection of a suggestion
-  const handleSelectSuggestion = (suggestion: any) => {
+  const handleSelectSuggestion = (suggestion: Suggestion) => {
+
     const cityName = suggestion.name;
     setCity(cityName);
     fetchWeather(cityName);
